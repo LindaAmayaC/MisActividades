@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altoLogoSplashScreen">45dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="title">27dp</dimen>
+    <dimen name="description">24dp</dimen>
+
+</resources>
