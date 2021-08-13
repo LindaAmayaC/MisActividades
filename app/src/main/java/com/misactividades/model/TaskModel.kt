@@ -2,4 +2,8 @@ package com.misactividades.model
 
 import java.io.Serializable
 
-data class TaskModel(val name:String, val description:String)
+class TaskModel : Serializable{
+    lateinit var docName : String
+    lateinit var name : String
+    lateinit var description : String
+}

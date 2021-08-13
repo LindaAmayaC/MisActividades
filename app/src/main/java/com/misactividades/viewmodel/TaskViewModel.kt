@@ -1,24 +1,30 @@
 package com.misactividades.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.misactividades.model.TaskModel
+import com.misactividades.network.Callback
+import com.misactividades.network.FirestoreService
+import java.lang.Exception
 
 class TaskViewModel : ViewModel(){
+    val firestoreService = FirestoreService()
+    var listTask : MutableLiveData<List<TaskModel>> = MutableLiveData()
 
-    val taskModel = MutableLiveData<List<TaskModel>>()
-
-    fun populateLiveData(){
-        taskModel.postValue(getTaskList())
+    fun refresh(){
+        getListTaskFromFirebase()
     }
 
-    fun getTaskList (): List<TaskModel>{
-        return listOf(
-            TaskModel(name = "Cocinar", description="meowD"),
-            TaskModel(name = "Hacer aseo", description="meowD"),
-            TaskModel(name = "Planchar", description="meowD"),
-            TaskModel(name = "Jugar videojuegos", description="meowD"),
-            TaskModel(name = "Sacar a Piwis" , description="meowD")
-        )
+    private fun getListTaskFromFirebase() {
+        firestoreService.getTaskList(object: Callback<List<TaskModel>>{
+            override fun onSuccess(result: List<TaskModel>?) {
+                listTask.postValue(result)
+            }
+
+            override fun onFailed(exception: Exception) {
+            }
+        })
     }
+
 }

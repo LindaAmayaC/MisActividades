@@ -42,23 +42,14 @@
                             android:id="@+id/tvDetailsActivityname"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Nombre de la Actividad"
+                            android:text=""
                             android:textColor="@color/white"
                             android:fontFamily="sans-serif"
                             android:textStyle="bold"
                             android:textSize="@dimen/title"
                             android:textAlignment="center"
                             android:padding="35dp"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Descripción"
-                            android:textColor="@color/white"
-                            android:fontFamily="sans-serif"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/description"
-                            android:textAlignment="center"
-                            android:padding="35dp"/>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="300dp"
                             android:layout_height="wrap_content"
@@ -66,7 +57,7 @@
                             android:paddingBottom="10dp"
                             app:cardElevation="4dp"
                             app:cardCornerRadius="40dp">
-                            <TextView
+                            <EditText
                                 android:id="@+id/tvDetailsActivitydescription"
                                 android:layout_width="match_parent"
                                 android:layout_height="261dp"

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.misactividades.R
 import com.misactividades.model.TaskModel
 
-class TaskAdapter () : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
+class TaskAdapter (val itemTaskListener: ItemTaskListener) : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
 
     var listTask = ArrayList<TaskModel>()
 
@@ -19,9 +19,13 @@ class TaskAdapter () : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
     override fun getItemCount() = listTask.size
 
 
-    override fun onBindViewHolder(holder: TaskAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val tasks = listTask[position]
         holder.tvTaskName.text = tasks.name
+
+        holder.itemView.setOnClickListener{
+           itemTaskListener.onItemClicked(tasks,position)
+        }
     }
 
     fun updateData(data: List<TaskModel>){

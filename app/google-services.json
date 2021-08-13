@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "152501260857",
+    "project_id": "misactividades-3146c",
+    "storage_bucket": "misactividades-3146c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152501260857:android:4766b08c6de1aa0f29f3e8",
+        "android_client_info": {
+          "package_name": "com.misactividades"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152501260857-9kdltir9dnkh4q1peiv5nv34blnoprde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfDTwX9n1j61INDIU5zU_nFHlJnzuecOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152501260857-9kdltir9dnkh4q1peiv5nv34blnoprde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
