@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical">
-    <FrameLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".view.ui.activities.TaskListActivity">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/topbarheight"
-        android:background="@drawable/stylegradienttopscreen"
-        />
-
+        android:layout_height="100dp"
+        android:background="@drawable/stylegradienttopscreen">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Actividades Pendientes"
+            android:textSize="@dimen/title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingTop="37dp"/>
+    </LinearLayout>
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="match_parent"
         android:layout_width="match_parent">
@@ -28,14 +39,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.4"
-                android:background="#8668B6" />
+                />
 
-            <ProgressBar
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true" />
         </RelativeLayout>
     </FrameLayout>
+
 </LinearLayout>
 
 

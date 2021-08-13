@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.3441025641025641" />
         <entry key="app/src/main/res/drawable/ic_return.xml" value="0.3441025641025641" />
         <entry key="app/src/main/res/drawable/stylebuttonreturncircle.xml" value="0.3441025641025641" />
         <entry key="app/src/main/res/drawable/stylecornerscard.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/stylegradientsplashscreen.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/stylegradienttopscreen.xml" value="0.3494791666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3182291666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_splashscreen.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_task_list.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_activity_details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_activitymain.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/task_item.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/bnv_element_menu.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/menu/bnv_list_activity.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/menu/bnv_menu_element_activity.xml" value="0.3333333333333333" />
       </map>
     </option>

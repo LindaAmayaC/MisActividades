@@ -52,6 +52,4 @@
             android:fontFamily="sans-serif">
         </TextView>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
