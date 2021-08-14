@@ -38,6 +38,21 @@ class TaskDetailViewModel : ViewModel(){
         }, taskToInsert)
     }
 
+    fun deleteTaskFirebase(){
+        firestoreService.deleteTask(object: Callback<Boolean>{
+            override fun onSuccess(result: Boolean?) {
+                Log.d("D","Delete Task Sucessful")
+                processFinished()
+            }
+
+            override fun onFailed(exception: Exception) {
+                Log.d("D","Not Delete")
+                processFinished()
+            }
+        },task.value?.docName.toString())
+    }
+
+
     private fun processFinished() {
         isLoading.value = true
     }

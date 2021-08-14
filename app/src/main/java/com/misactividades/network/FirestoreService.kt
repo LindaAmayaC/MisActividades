@@ -38,4 +38,14 @@ class FirestoreService {
             }
 
     }
+    fun deleteTask(callback: Callback<Boolean>, docName:String){
+        firesbaseFirestore.collection(TASKLIST_COLLECTION_NAME)
+            .document(docName).delete()
+            .addOnSuccessListener{ _ ->
+                callback.onSuccess(true)
+            }
+            .addOnFailureListener{ _ ->
+                callback.onSuccess(false)
+            }
+    }
 }

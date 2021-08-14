@@ -1,5 +1,6 @@
 package com.misactividades.model
 
+
 import java.io.Serializable
 
 class TaskModel : Serializable{

@@ -12,6 +12,7 @@ class TaskViewModel : ViewModel(){
     val firestoreService = FirestoreService()
     var listTask : MutableLiveData<List<TaskModel>> = MutableLiveData()
 
+
     fun refresh(){
         getListTaskFromFirebase()
     }

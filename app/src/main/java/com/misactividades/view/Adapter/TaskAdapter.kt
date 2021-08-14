@@ -9,7 +9,6 @@ import com.misactividades.R
 import com.misactividades.model.TaskModel
 
 class TaskAdapter (val itemTaskListener: ItemTaskListener) : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
-
     var listTask = ArrayList<TaskModel>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder (
@@ -24,7 +23,7 @@ class TaskAdapter (val itemTaskListener: ItemTaskListener) : RecyclerView.Adapte
         holder.tvTaskName.text = tasks.name
 
         holder.itemView.setOnClickListener{
-           itemTaskListener.onItemClicked(tasks,position)
+            itemTaskListener.onItemClicked(tasks, position)
         }
     }
 

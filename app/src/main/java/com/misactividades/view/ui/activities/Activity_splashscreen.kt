@@ -3,7 +3,7 @@ package com.misactividades
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.misactividades.view.ui.activities.TaskListActivity
+import com.misactividades.view.ui.activities.MainActivity
 
 class activity_splashscreen: AppCompatActivity() {
 
@@ -12,7 +12,7 @@ class activity_splashscreen: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashscreen)
 
-        val intent = Intent(this, TaskListActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }

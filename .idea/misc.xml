@@ -5,15 +5,21 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.3441025641025641" />
         <entry key="app/src/main/res/drawable/ic_return.xml" value="0.3441025641025641" />
+        <entry key="app/src/main/res/drawable/stylebutton.xml" value="0.3338541666666667" />
         <entry key="app/src/main/res/drawable/stylebuttonreturncircle.xml" value="0.3441025641025641" />
+        <entry key="app/src/main/res/drawable/stylecornerroundic.xml" value="0.3338541666666667" />
         <entry key="app/src/main/res/drawable/stylecornerscard.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/stylegradientsplashscreen.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/drawable/stylegradienttopscreen.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_splashscreen.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_task_list.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/card_view_delete.xml" value="0.3177083333333333" />
+        <entry key="app/src/main/res/layout/card_view_editable.xml" value="0.3177083333333333" />
+        <entry key="app/src/main/res/layout/card_view_readable.xml" value="0.3177083333333333" />
         <entry key="app/src/main/res/layout/fragment_activity_details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_task_details.xml" value="0.15052083333333333" />
+        <entry key="app/src/main/res/layout/fragment_task_list.xml" value="0.3177083333333333" />
         <entry key="app/src/main/res/layout/item_activitymain.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/task_item.xml" value="0.25" />
         <entry key="app/src/main/res/menu/bnv_element_menu.xml" value="0.3333333333333333" />

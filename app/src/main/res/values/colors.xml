@@ -11,4 +11,5 @@
     <color name="colorSecondary">#4205F1</color>
     <color name="colorCard">#80BDF1</color>
     <color name="transparent">#00000000</color>
+    <color name="border">#EED1D1D1</color>
 </resources>
